@@ -7,6 +7,9 @@ language: php
 php:
   - 7.0
   
+before_install:
+  - node_js install 8
+   
 matrix:
   fast_finish: true
     

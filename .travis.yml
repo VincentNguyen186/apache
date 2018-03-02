@@ -36,6 +36,6 @@ before_script:
   
 script:
 - curl http://127.0.0.1/test.php
-- curl http://localhost/test.php
-- curl http://localhost/test.php?tttt=6666
-- curl http://localhost/test.php?tttt=ccccc
+#- curl http://localhost/test.php
+#- curl http://localhost/test.php?tttt=6666
+#- curl http://localhost/test.php?tttt=ccccc

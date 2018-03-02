@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "test": "node index.js"
+  },
+  "devDependencies": {
+    "tape": "*",
+    "chrome-launcher": "*",
+    "chrome-remote-interface": "*"
+  }
+}

@@ -37,8 +37,8 @@ before_script:
   - sudo sed -e "s?%TRAVIS_BUILD_DIR%?$(pwd)?g" --in-place /etc/apache2/sites-available/000-default.conf
   - sudo service apache2 restart
   
-script:
-- node index.js
+#script:
+#- node index.js
 #- curl http://127.0.0.1/test.php
 #- curl http://localhost/test.php
 #- curl http://localhost/test.php?tttt=6666

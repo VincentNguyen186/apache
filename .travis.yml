@@ -9,7 +9,7 @@ php:
 
 cache:
   directories:
-    - node_modules
+    - $HOME/.npm
     
 before_install:
   - npm install tape

@@ -11,10 +11,10 @@ cache:
   directories:
     - $HOME/.npm
     
-#before_install:
- # - npm install tape
-  #- npm install chrome-launcher
-  #- npm install chrome-remote-interface
+before_install:
+  - npm install tape
+  - npm install chrome-launcher
+  - npm install chrome-remote-interface
  
 node_js:
     - "node"

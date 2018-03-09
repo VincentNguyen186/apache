@@ -24,6 +24,9 @@ before_install:
   - npm install tape
   - npm install chrome-launcher
   - npm install chrome-remote-interface
+  # create the databases that will be used by the site using `mysql` binary
+  # user is `root`, password is empty and host is `localhost`
+  - mysql -e "create database IF NOT EXISTS $DB_NAME;" -uroot
  
 node_js:
     - "node"
@@ -33,11 +36,6 @@ env:
     - SITE_URL="http://site.localhost"
     - SITE_DOMAIN="site.localhost"
     - DB_NAME="test"
-
-before_install:
-  # create the databases that will be used by the site using `mysql` binary
-  # user is `root`, password is empty and host is `localhost`
-  - mysql -e "create database IF NOT EXISTS $DB_NAME;" -uroot
    
 matrix:
   fast_finish: true

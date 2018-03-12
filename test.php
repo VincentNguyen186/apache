@@ -58,7 +58,7 @@ class cURLHandler {
 				$ch = curl_init();
 				
 				curl_setopt($ch, CURLOPT_URL, $url);
-
+				/*
 				if ($postingData) { curl_setopt($ch, CURLOPT_POSTFIELDS, $postData); }
 				
 				if(isset($headers)){
@@ -69,6 +69,7 @@ class cURLHandler {
 				curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 				curl_setopt($ch, CURLOPT_CONNECTTIMEOUT ,self::API_LOAD_TIMEOUT); 
 				curl_setopt($ch, CURLOPT_TIMEOUT, self::API_CURL_TIMEOUT);
+				*/
 				
 				$result = curl_exec($ch);
 

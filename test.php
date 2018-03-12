@@ -209,6 +209,6 @@ class cURLHandler {
 
 <?php
 
-echo cURLHandler::requestData("https://feed.theplatform.com/f/VSsHaC/B0Xsr4HI9Tzx?form=json&byGuid=22HC0002B02", null, null, true);
+echo cURLHandler::requestData("https://profile-qa4-origin.api.beachbodyondemand.com/video/authorize?videoId=22HC0002B02&profileId=92ACBC10-4795-42E1-95EF-D66EA9649C50&linkId=3MNvhIFHYaMi&platform=web&language=english", null, null, true);
 
 ?>

@@ -19,6 +19,14 @@ function sleep(waitTime) {
       ]
     });
   }
+	
+	async function eval(runtime, expression) {
+		var result = await runtime.evaluate({
+			expression: expression
+		});
+		return result.result.value;
+	}
+	
   const chrome = await launchChrome();
   const protocol = await CDP({
     port: chrome.port

@@ -2,6 +2,14 @@ const chromeLauncher = require('chrome-launcher');
 const CDP = require('chrome-remote-interface');
 test = require('tape');
 
+function sleep(waitTime) {
+	return new Promise(resolve => {
+    	setTimeout(() => {
+      		resolve('resolved');
+    	}, waitTime);
+  	});
+};
+
 (async function() {
   async function launchChrome() {
     return await chromeLauncher.launch({
@@ -44,6 +52,26 @@ test = require('tape');
 
     t.equal(1, 1, "Pdk Player Initialization.");
   });
+    
+    
+    await sleep(2000);
+		
+
+		
+		console.log("debugRequest1:", await eval(Runtime, "$(\'#debugRequest1\').length"));
+		console.log("debugRequest2:", await eval(Runtime, "$(\'#debugRequest2\').length"));
+
+		console.log("debugTryLoop1:", await eval(Runtime, "$(\'#debugTryLoop1\').length"));
+		console.log("debugTryLoop2:", await eval(Runtime, "$(\'#debugTryLoop2\').length"));
+		console.log("debugTryLoop3:", await eval(Runtime, "$(\'#debugTryLoop3\').length"));
+		console.log("debugTryLoop3Error1:", await eval(Runtime, "$(\'#debugTryLoop3Error1\').length"));
+		console.log("debugTryLoop3Error2:", await eval(Runtime, "$(\'#debugTryLoop3Error2\').length"));
+		console.log("debugTryLoop4:", await eval(Runtime, "$(\'#debugTryLoop4\').length"));
+
+		console.log("debugExceptionLoop:", await eval(Runtime, "$(\'#debugExceptionLoop\').length"));
+		console.log("debugErrorLoop:", await eval(Runtime, "$(\'#debugErrorLoop\').length"));
+
+		
   
 
 

@@ -209,6 +209,19 @@ class cURLHandler {
 
 <?php
 
-echo cURLHandler::requestData("https://profile-qa4-origin.api.beachbodyondemand.com/video/authorize?videoId=22HC0002B02&profileId=92ACBC10-4795-42E1-95EF-D66EA9649C50&linkId=3MNvhIFHYaMi&platform=web&language=english", null, null, true);
-
+//echo cURLHandler::requestData("https://profile-qa4-origin.api.beachbodyondemand.com/video/authorize?videoId=22HC0002B02&profileId=92ACBC10-4795-42E1-95EF-D66EA9649C50&linkId=3MNvhIFHYaMi&platform=web&language=english", null, null, true);
+	$userguid = "ABCD";
 ?>
+
+ <script>
+	 
+	 var a 			= "<?php echo $userguid ?>";
+	 console.log("passed point a");
+	 
+	 var b 			= "<?php echo $feedData ?>";
+	 console.log("passed point b");
+	 
+	 var c			= "<?php echo isset($feedData) ?>" ? <?php echo json_encode($feedData) ?> : null;
+	 console.log("passed point c");
+     
+ </script>

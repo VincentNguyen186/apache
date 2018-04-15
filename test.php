@@ -214,7 +214,7 @@ class cURLHandler {
 	    console.log("passed point a");
 	    
 
-	    var b 			= "<?php echo isset($feedData) ? json_encode($feedData) : null; ?>;
+	    var b 			= <?php echo isset($feedData) ? json_encode($feedData) : null; ?>;
 	    console.log("passed point b");
 
 	    var c			= <?php echo isset($coreData) ? json_encode($coreData) : 

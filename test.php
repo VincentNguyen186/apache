@@ -209,7 +209,7 @@ class cURLHandler {
     <input type="button" value="Star" id="click-here" onclick="change()"></input>
     <script>
 	    console.log("********** PRE-TEST ***********");
-	    
+	    /*
 	    var a 			= "<?php echo $userguid ?>";
 	    console.log("passed point a");
 
@@ -218,6 +218,7 @@ class cURLHandler {
 
 	    var c			= "<?php echo isset($feedData) ?>" ? <?php echo json_encode($feedData) ?> : null;
 	    console.log("passed point c");
+	    */
      
     </script>
   </body>

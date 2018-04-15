@@ -209,9 +209,10 @@ class cURLHandler {
     <input type="button" value="Star" id="click-here" onclick="change()"></input>
     <script>
 	    console.log("********** PRE-TEST ***********");
-	    /*
+	    
 	    var a 			= "<?php echo $userguid ?>";
 	    console.log("passed point a");
+	    /*
 
 	    var b 			= "<?php echo $feedData ?>";
 	    console.log("passed point b");

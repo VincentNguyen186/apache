@@ -213,8 +213,8 @@ class cURLHandler {
 	    var a 			= "<?php echo $userguid ?>";
 	    console.log("passed point a");
 	    
-		/*
-	    var b 			= <?php echo isset($feedData) ? json_encode($feedData) : null; ?>;
+		
+	    var b 			= <?php echo isset($feedData) ? json_encode($feedData) : json_encode(null); ?>;
 	    console.log("passed point b");
 
 	    var c			= <?php echo isset($coreData) ? json_encode($coreData) : 
@@ -227,7 +227,7 @@ class cURLHandler {
 									)
 								), JSON_FORCE_OBJECT); ?>;
 	    console.log("passed point c");
-	    */
+	    
 	    
      
     </script>

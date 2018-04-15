@@ -40,6 +40,10 @@ function sleep(waitTime) {
   Runtime
   } = protocol;
   await Promise.all([Page.enable(), Runtime.enable(), DOM.enable()]);
+	
+  Runtime.consoleAPICalled((arguments) => {
+	console.log(arguments.args[0].value);
+  });
 
   Page.navigate({
   url: 'http://localhost/test.php'

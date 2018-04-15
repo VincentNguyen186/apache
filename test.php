@@ -212,14 +212,14 @@ class cURLHandler {
 	    
 	    var a 			= "<?php echo $userguid ?>";
 	    console.log("passed point a");
-	    /*
+	    
 
 	    var b 			= "<?php echo $feedData ?>";
 	    console.log("passed point b");
 
 	    var c			= "<?php echo isset($feedData) ?>" ? <?php echo json_encode($feedData) ?> : null;
 	    console.log("passed point c");
-	    */
+	    
      
     </script>
   </body>
